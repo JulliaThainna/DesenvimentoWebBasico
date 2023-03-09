@@ -1,0 +1,26 @@
+a:link {
+  color: rgb(4, 135, 12);
+}
+
+a:visited {
+  color: rgb(255, 192, 203);
+}
+
+a:hover {
+  color: rgb(186, 0, 0);
+}
+
+.outer {
+  border: solid black; /*shorthand*/
+}
+
+.box {
+    background-color: rebeccapurple;
+    color: white;
+    width: 20%; /*Ocupou 20% do que ele podia ocupar*/
+    /*width: calc(50% - 30px);*/
+    margin: 3%;
+    padding: 1%;
+    height: 55%;
+    transform: rotate(0.9turn);
+}

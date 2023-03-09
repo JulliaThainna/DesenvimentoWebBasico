@@ -1,0 +1,35 @@
+body {
+  margin: 3%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.autor {
+  border-bottom: dotted 1rem palevioletred; /*shorthand*/
+  color: purple;
+  font-size: 4em;
+}
+
+.box {
+  border: black solid;
+  text-align: center;
+  padding-top: 2rem;
+  margin: 10%;
+  padding: 2%;
+}
+
+.description {
+  color: #33363d;
+}
+
+.subtitle {
+  color: gray;
+}
+
+.iconBox {
+  width: 5%;
+  margin: 2%;
+}

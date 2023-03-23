@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to JS</title>
+</head>
+<body>
+    <div>
+        <h2>See date and time</h2>
+        <p>Cick on the button to see the system date and time</p>
+        <button onclick="document.getElementById('dh').innerHTML = Date()"> <!--innerHTML vai mudar o HTML onde tem dh-->
+            Click
+        </button>
+        <!--P is to show date and time-->
+        <p id="dh"></p>
+    </div>
+
+    <div>
+        <h2>Transfer infos with JS</h2>
+        <p id="par1">This paragraph will be copied to the bellow button paragraph</p>
+        <button onclick="myFunction()">
+            Click here to copy
+        </button>
+        <p id="par2"></p>
+    </div>
+
+    <div>
+        <h2>Editing an img src</h2>
+        <p>JS can edit the font of an image</p>
+        <button onclick="notEat()">Kirby normal</button>
+        <img id="kirby" src="img/kirby_normal.png" alt="normal kirby">
+        <button onclick="eat()">Kirby eating your soul</button>
+    </div>
+
+    <div>
+        <h2>Changing style with JS</h2>
+        <p id="pStyle">This paragraph will be changed when the button bellow receive a click and it will be removed if pass the mouse </p>
+        <button onclick="editStyle()" onmouseover="editDisplayRemove()" onmouseout="editDisplayBack()">
+            Click
+        </button>
+    </div>
+
+    <div>
+        <h2>Popup</h2>
+        <p>Click on the button to see a message</p>
+        <button onclick="seePopup()">
+            See a message :)
+        </button>
+    </div>
+
+    <script>
+        function myFunction(){
+            var x = document.getElementById('par1').innerHTML;
+            document.getElementById('par2').innerHTML = x;
+            //O elemento com id par1 do HTML é copiado para var X, depois o elemento com id part2 é substituido pelo conteúdo da var X
+        }
+
+        function eat(){
+            document.getElementById('kirby').src = "img/kirby_eating.png";
+        }
+
+        function notEat(){
+            document.getElementById('kirby').src = "img/kirby_normal.png";
+        }
+
+        function editStyle(){
+            document.getElementById('pStyle').style.fontSize = '3em';
+        }
+
+        function editDisplayRemove(){
+            document.getElementById('pStyle').style.display = 'none';
+        }
+
+        function editDisplayBack(){
+            document.getElementById('pStyle').style.display = 'block';
+        }
+
+        function seePopup(){
+            window.alert('yr gay :)');
+        }
+    </script>
+</body>
+</html>

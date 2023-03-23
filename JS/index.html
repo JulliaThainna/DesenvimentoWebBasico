@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+    <script>
+        //mensagem inicial
+        console.log('Entrou no JS!')
+
+        var xpto;
+        xpto = 10;
+        console.log('Valor de xpto: ' + xpto)
+        xpto = xpto + 'abc'
+        console.log('Tipo da variável: ' + typeof xpto)
+        
+        //A diferença de var e let é o escopo da variável, var é global e let é local
+        //Quando o escopo não é definido sempre é considerado como var
+        var melancia = 'fruta'
+        let laranja = 'limão'
+
+        console.log('O valor de melancia: ' + melancia)
+        console.log('O valor de laranja: ' + laranja)
+
+        if(true){
+            melancia = 'kiwi'
+            laranja = 'tomate'
+            console.log('O valor de melancia: ' + melancia)
+            console.log('O valor de laranja: ' + laranja)
+        }
+        //Tipagem fraca -> Não é preciso definir o tipo da variável
+        //Tipagem dinâmica -> O tipo da variável pode ser alterado
+
+        let numero1 = 100
+        let numero2 = 200
+        let numerofinal = numero1 + numero2
+        console.log('Valor final: ' + numerofinal)
+    </script>
+</head>
+<body>
+    <h1>Variáveis</h1>
+</body>
+</html>

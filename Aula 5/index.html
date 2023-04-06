@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/script.js"></script>
+    <title>Estudo Javascript</title>
+  </head>
+  <body>
+    <!--Desenvolva uma página HTML que receba um número e imprima a tabuada do número digitado pelo usuário-->
+    <div>
+      <form onsubmit="return calcularTabuada()">
+        <h1>Tabuada</h1>
+        <h3>Deseja ver a tabuada de qual valor?</h3>
+        <label for="n">Número:</label>
+        <input type="number" id="n" required />
+        <button type="submit">Ver</button>
+        <div id="result"></div>
+      </form>
+    </div>
+
+    <!--Desenvolva uma página HTML que conte quantos cliques um botão recebeu e exiba em tempo de execução-->
+    <div>
+      <h1>Contador de cliques</h1>
+      <p>Esse botão recebeu <span id="click">0</span> cliques</p>
+      <button onclick="contador()">Clique</button>
+    </div>
+
+    <!--Sorteador-->
+    <div>
+      <h1>Sorteador</h1>
+      <p>Sorteie um número aleatório</p>
+      <button onclick="sorteador()">Sortear</button>
+      <p>Número sorteado: <span id="aleatorio"></span></p>
+    </div>
+
+    <!--Sorteador 2-->
+    <div>
+      <h1>Sorteador</h1>
+      <h2>Sorteie um número aleatório</h2>
+      <p>Escolha um intervalo para sortear o número:</p>
+      <label for="i1">Primeiro valor: </label>
+      <input type="number" id="i1" />
+      <label for="i2">Segundo valor: </label>
+      <input type="number" id="i2" />
+      <button
+        onclick="sorteadorIntervalo(document.getElementById('i1').value, document.getElementById('i2').value)"
+      >
+        Clique aqui
+      </button>
+      <p>Número sorteado: <span id="aleatorio2"></p>
+    </div>
+  </body>
+</html>

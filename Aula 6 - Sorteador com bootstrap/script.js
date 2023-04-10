@@ -43,7 +43,7 @@ function validate(){
     document.getElementById("max").setCustomValidity("");
   }
 
-  if(min > max){
+  if(min >= max){
     document.getElementById("min").setCustomValidity("Informe um valor mínimo menor que o máximo.");
   } else{
     document.getElementById("max").setCustomValidity("");

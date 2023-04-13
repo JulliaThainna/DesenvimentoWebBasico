@@ -10,6 +10,7 @@ function getRadio() {
   }
 }
 
+
 function getOp(){
   let selectElement = document.querySelector("#select1");
   let text = selectElement.value;
@@ -18,9 +19,13 @@ function getOp(){
 
 function getCheckBox(){
   let checkBox = document.querySelectorAll("input[type=checkbox]:checked");
-  let text = "";
-  for (let i = 0; i < checkBox.length; i++) {
-    text = text + ", " + checkBox[i].value;
+  let text;
+  for (let i = 0; i < checkBox.length; i++) { 
+    if(i == 0){
+      text = checkBox[i].value;
+    } else{
+      text = text + ", " + checkBox[i].value; //work + health + studi
+    }
   }
   document.getElementById("priorities").innerHTML = text;
 }

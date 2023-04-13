@@ -10,21 +10,20 @@ function getRadio() {
   }
 }
 
-
-function getOp(){
+function getOp() {
   let selectElement = document.querySelector("#select1");
   let text = selectElement.value;
   document.querySelector(".plan").textContent = text;
 }
 
-function getCheckBox(){
+function getCheckBox() {
   let checkBox = document.querySelectorAll("input[type=checkbox]:checked");
   let text;
-  for (let i = 0; i < checkBox.length; i++) { 
-    if(i == 0){
+  for (let i = 0; i < checkBox.length; i++) {
+    if (i == 0) {
       text = checkBox[i].value;
-    } else{
-      text = text + ", " + checkBox[i].value; //work + health + studi
+    } else {
+      text = text + ", " + checkBox[i].value;
     }
   }
   document.getElementById("priorities").innerHTML = text;

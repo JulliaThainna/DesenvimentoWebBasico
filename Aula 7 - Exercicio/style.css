@@ -1,0 +1,7 @@
+.animalsCard , .animalsCard .card{
+    border-radius: 2%;
+}
+
+#animalsContainer{
+    visibility: hidden;
+}

@@ -4,79 +4,85 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <title>Forms</title>
   </head>
   <body>
-    <!--
-    - Desenvolva um formulario de sua preferencia que contenha os
-campos exibidos e monte um texto com as seleçoes do usuario.
-    - Alem disso o formulario deve mudar as cores com base em
-combinaçoes de selecao diferentes;
-    - Aplique CSS com Bootstrap para posicionamento e tipografia
-de elementos conforme a aula anterior
--->
-    <div class="d-flex justify-content-center align-items-center">
-        <div class="card" style="width: max-content;">
-            <div class="card-body">
-                <h5 class="card-title">Teste</h5>
-                <p class="card-text">kfhdfjnsd</p>
-                <a href="#" class="btn btn-dark">hehe</a>
-            </div>
-        </div>
-    </div>
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div id="carouselSW" class="carousel slide" style="width: 25rem;">
+            <div class="carousel-inner swCards">
+                <div class="carousel-item active" id="aa">
+                    <div class="card border-0">
+                        <img src="img/cat-bichinho.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title">Teste</h3>
+                            <p class="card-text">hhahahahaha coringuei</p>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="d-flex justify-content-center align-items-center">
-        <div id="carousel-music" class="carousel slide" style="width: 25rem;">
-            <div class="carousel-inner animalsCard overflow-hidden">
-                <div class="carousel-item active">
-                    <div class="card">
-                        <img src="img/gatito.jpg" alt="">
+                <div class="carousel-item">
+                    <div class="card border-0">
+                        <img src="img/cat-sith.webp" alt="" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Teste</h5>
-                            <p>ksdkjfjksdklf</p>
+                            <p class="card-text">hhahahahaha coringuei</p>
                             <a href="#" class="btn btn-dark">dsikjfhjsikd</a>
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="carousel-item">
-                    <div class="card">
-                    <img src="img/gatito.jpg" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Teste</h5>
-                        <p>aaaaa</p>
-                        <a href="#" class="btn btn-dark">dsikjfhjsikd</a>
+                    <div class="card border-0">
+                        <img src="img/cat-jedi.webp" alt="" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Teste</h5>
+                            <p class="card-text">hhahahahaha coringuei</p>
+                            <a href="#" class="btn btn-dark">dsikjfhjsikd</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <button
+
+            <button 
                 class="carousel-control-prev"
                 type="button"
-                data-bs-target="#carousel-music"
+                data-bs-target="#carouselSW"
                 data-bs-slide="prev"
+                onclick="changeShadow('P')"
             >
-                <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+                <span class="carousel-control-prev-icon aria-hidden="true" style="background-color: black;"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-        
-            <button
+
+            <button 
                 class="carousel-control-next"
                 type="button"
-                data-bs-target="#carousel-music"
+                data-bs-target="#carouselSW"
                 data-bs-slide="next"
+                onclick="changeShadow('N')"
             >
-                <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black;"></span>
+                <span class="carousel-control-next-icon aria-hidden="true" style="background-color: black;"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
   </body>
 </html>
+
+<!--
+- Desenvolva um formulario de sua preferencia que contenha os
+campos exibidos e monte um texto com as seleçoes do usuario.
+- Alem disso o formulario deve mudar as cores com base em
+combinaçoes de selecao diferentes;
+- Aplique CSS com Bootstrap para posicionamento e tipografia
+de elementos conforme a aula anterior
+-->

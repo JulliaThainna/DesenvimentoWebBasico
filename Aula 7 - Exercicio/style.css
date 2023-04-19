@@ -1,7 +1,13 @@
-.animalsCard , .animalsCard .card{
-    border-radius: 2%;
+body{
+    background-color: black;
 }
 
-#animalsContainer{
-    visibility: hidden;
+.swCards{
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: yellow 0 1rem 3rem 0.2rem;
+}
+
+.swCards .card{
+    height: 35rem;
 }

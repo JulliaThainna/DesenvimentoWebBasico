@@ -11,3 +11,18 @@ body{
 .swCards .card{
     height: 35rem;
 }
+
+.divFormSides{
+    color: white;
+}
+ 
+input#sideSith.form-check-input:checked, input#sideSith.form-check-input:focus{
+    background-color: red;
+    border-color: red;
+    box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, .25);
+}
+input#sideNeutral.form-check-input:checked, input#sideNeutral.form-check-input:focus{
+    background-color: yellow;
+    border-color: yellow;
+    box-shadow: 0 0 0 0.25rem rgb(255, 255, 0, .25);
+}

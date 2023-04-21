@@ -10,6 +10,9 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
@@ -20,9 +23,9 @@
     <div class="d-flex justify-content-center align-items-center" style="height: 85vh;">
         <div id="carouselSW" class="carousel slide" style="width: 25rem;">
             <div class="carousel-inner swCards">
-                <div class="carousel-item active" id="aa">
+                <div class="carousel-item active">
                     <div class="card border-0">
-                        <img src="img/cat-bichinho.jpg" alt="" class="card-img-top">
+                        <img src="img/cat-bichinho.jpg" alt="cat-ewoke" class="card-img-top">
                         <div class="card-body">
                             <h3 class="card-title">Teste</h3>
                             <p class="card-text">hhahahahaha coringuei</p>
@@ -32,7 +35,7 @@
 
                 <div class="carousel-item">
                     <div class="card border-0">
-                        <img src="img/cat-sith.webp" alt="" class="card-img-top">
+                        <img src="img/cat-sith.webp" alt="cat-sith" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Teste</h5>
                             <p class="card-text">hhahahahaha coringuei</p>
@@ -43,7 +46,7 @@
 
                 <div class="carousel-item">
                     <div class="card border-0">
-                        <img src="img/cat-jedi.webp" alt="" class="card-img-top">
+                        <img src="img/cat-jedi.webp" alt="cat-jedi" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Teste</h5>
                             <p class="card-text">hhahahahaha coringuei</p>
@@ -58,8 +61,6 @@
                 type="button"
                 data-bs-target="#carouselSW"
                 data-bs-slide="prev"
-                onclick="changeShadow('P')"
-                onkeydown="verifyKey(event)"
             >
                 <span class="carousel-control-prev-icon aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -70,42 +71,41 @@
                 type="button"
                 data-bs-target="#carouselSW"
                 data-bs-slide="next"
-                onclick="changeShadow('N')"
-                onkeydown="verifyKey(event)"
             >
                 <span class="carousel-control-next-icon aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
-
-    <div class="d-flex justify-content-center align-items-center divFormSides">
+    
+    <div class="d-flex justify-content-center align-items-center divFormSides">  
         <div class="form-check formSide">
-            <input class="form-check-input" type="radio" name="formSides" id="sideNeutral" value="option1" onclick="changeCard(event)">
-             <label class="form-check-label" for="sideNeutral">
-                 just a lirou ewok
-             </label>
-         </div>
- 
-         <div class="form-check formSide mx-5">
-             <input class="form-check-input" type="radio" name="formSides" id="sideSith" value="option2" onclick="changeCard(event)">
-              <label class="form-check-label" for="sideSith">
-                  just a lirou sith
-              </label>
-          </div>
- 
-          <div class="form-check formSide">
-             <input class="form-check-input" type="radio" name="formSides" id="sideJedi" value="option3" onclick="changeCard(event)">
-              <label class="form-check-label" for="sideJedi">
-                  just a lirou jedi
-              </label>
-          </div>
+            <input class="form-check-input" type="radio" name="formSides" id="sideNeutral" value="neutral">
+            <label class="form-check-label" for="sideNeutral">
+                just a lirou ewok
+            </label>
+        </div>
+    
+        <div class="form-check formSide mx-4">
+            <input class="form-check-input" type="radio" name="formSides" id="sideSith" value="dark">
+            <label class="form-check-label" for="sideSith">
+                just a lirou sith
+            </label>
+        </div>
+    
+        <div class="form-check formSide">
+            <input class="form-check-input" type="radio" name="formSides" id="sideJedi" value="light">
+            <label class="form-check-label" for="sideJedi">
+                just a lirou jedi
+            </label>
+        </div>
     </div>
 
-    <div class="d-flex container-fluid justify-content-center mt-3">
-        <button class="btn btn-primary">
-            Choose your side!
-          </button>
+    <div class="d-flex justify-content-center align-items-center mt-4">
+        <button class="btn" id="button-choose" onclick="getRadio()">
+            <h4>Choose your side</h4>
+        </button>
+        <h2 id="msg-choose-side"></h2>
     </div>
   </body>
 </html>

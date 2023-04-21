@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+    font-family:'Bungee', cursive;
+}
+
+.swCards{
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: rgb(255, 193, 7) 0 1rem 3rem 0.2rem;
+}
+.swCards .card{
+    height: 35rem;
+}
+
+.divFormSides{
+    color: rgb(190, 180, 180);
+    font-size: small;
+}
+
+.formSide .form-check-input:checked[type=radio]{
+    background-image: none;
+}
+
+input#sideNeutral.form-check-input:checked, input#sideNeutral.form-check-input:focus{
+    background-color: purple;
+    border-color: purple;
+    box-shadow: 0 0 0 0.25rem rgba(128, 0, 128, 0.25);
+}
+input#sideSith.form-check-input:checked, input#sideSith.form-check-input:focus{
+    background-color: red;
+    border-color: red;
+    box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, .25);
+}
+input#sideJedi.form-check-input:checked, input#sideJedi.form-check-input:focus{
+    background-color: blue; 
+    border-color: blue;
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 255, .25);
+}
+
+#button-choose{
+    background-color: transparent;
+    border: 0.05rem solid rgb(255, 193, 7);
+    color: white;
+}
+button#button-choose:hover {  
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.05), 0 0 20px rgba(255, 193, 7, 0.05), 0 0 30px rgba(255, 193, 7, 0.05), 0 0 40px rgba(255, 193, 7, 0.05), 0 0 70px rgba(255, 193, 7, 0.05), 0 0 80px rgba(255, 193, 7, 0.05), 0 0 100px rgba(255, 193, 7, 0.05), 0 0 150px rgba(255, 193, 7, 0.05), 0 0 200px rgba(255, 193, 7, 0.05);
+}

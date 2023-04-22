@@ -45,3 +45,12 @@ input#sideJedi.form-check-input:checked, input#sideJedi.form-check-input:focus{
 button#button-choose:hover {  
     box-shadow: 0 0 10px rgba(255, 193, 7, 0.05), 0 0 20px rgba(255, 193, 7, 0.05), 0 0 30px rgba(255, 193, 7, 0.05), 0 0 40px rgba(255, 193, 7, 0.05), 0 0 70px rgba(255, 193, 7, 0.05), 0 0 80px rgba(255, 193, 7, 0.05), 0 0 100px rgba(255, 193, 7, 0.05), 0 0 150px rgba(255, 193, 7, 0.05), 0 0 200px rgba(255, 193, 7, 0.05);
 }
+
+#div-arrow{
+    visibility: hidden;
+}
+
+.swCards .card-img {
+    width: 35rem;
+    height: 27rem;
+}

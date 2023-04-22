@@ -16,43 +16,29 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
-    <title>Forms</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <title>Cat Wars</title>
   </head>
   <body>
-    <div class="d-flex justify-content-center align-items-center" style="height: 85vh;">
-        <div id="carouselSW" class="carousel slide" style="width: 25rem;">
+    <div class="container-fluid row mx-0" id="div-arrow">
+        <div class="col-6">
+            <a href="./index.html"><i class="bi bi-chevron-left" style="color: rgb(190, 180, 180); font-size: 2rem;"></i></a>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+            <a href="./index.html"><i class="bi bi-chevron-right align-items-center" style="color: rgb(190, 180, 180); font-size: 2rem;"></i></a>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center" style="height: 75vh;">
+        <div id="carouselSW" class="carousel slide" style="width: 35rem;">
             <div class="carousel-inner swCards">
                 <div class="carousel-item active">
-                    <div class="card border-0">
-                        <img src="img/cat-bichinho.jpg" alt="cat-ewoke" class="card-img-top">
-                        <div class="card-body">
-                            <h3 class="card-title">Teste</h3>
-                            <p class="card-text">hhahahahaha coringuei</p>
-                        </div>
-                    </div>
+                    <img src="img/cat-neutral.jpg" alt="cat-ewoke" class="card-img">
                 </div>
-
                 <div class="carousel-item">
-                    <div class="card border-0">
-                        <img src="img/cat-sith.webp" alt="cat-sith" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Teste</h5>
-                            <p class="card-text">hhahahahaha coringuei</p>
-                            <a href="#" class="btn btn-dark">dsikjfhjsikd</a>
-                        </div>
-                    </div>
+                    <img src="img/cat-dark.jpg" alt="cat-sith" class="card-img">
                 </div>
-
                 <div class="carousel-item">
-                    <div class="card border-0">
-                        <img src="img/cat-jedi.webp" alt="cat-jedi" class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Teste</h5>
-                            <p class="card-text">hhahahahaha coringuei</p>
-                            <a href="#" class="btn btn-dark">dsikjfhjsikd</a>
-                        </div>
-                    </div>
+                    <img src="img/cat-light.jpg" alt="cat-jedi" class="card-img">
                 </div>
             </div>
 
@@ -78,30 +64,25 @@
         </div>
     </div>
 
-    <!-- <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe> -->
-    <audio autoplay loop controls>
-        <source src="https://youtu.be/1dDBvOtRaSo" type="audio/mp3">
-    </audio>
-
     <div class="d-flex justify-content-center align-items-center divFormSides">  
         <div class="form-check formSide">
             <input class="form-check-input" type="radio" name="formSides" id="sideNeutral" value="neutral">
             <label class="form-check-label" for="sideNeutral">
-                just a lirou ewok
+                i'm just a little ewok
             </label>
         </div>
     
         <div class="form-check formSide mx-4">
             <input class="form-check-input" type="radio" name="formSides" id="sideSith" value="dark">
             <label class="form-check-label" for="sideSith">
-                just a lirou sith
+                i love anakin skywalker
             </label>
         </div>
     
         <div class="form-check formSide">
             <input class="form-check-input" type="radio" name="formSides" id="sideJedi" value="light">
             <label class="form-check-label" for="sideJedi">
-                just a lirou jedi
+                i wanna be a rebel
             </label>
         </div>
     </div>
@@ -112,6 +93,8 @@
         </button>
         <h2 id="msg-choose-side"></h2>
     </div>
+
+    <div id="song-theme"></div>
   </body>
 </html>
 
@@ -119,7 +102,7 @@
 - Desenvolva um formulario de sua preferencia que contenha os
 campos exibidos e monte um texto com as seleçoes do usuario.
 - Alem disso o formulario deve mudar as cores com base em
-combinaçoes de selecao diferentes;
+combinaçoes de selecao diferentes;  
 - Aplique CSS com Bootstrap para posicionamento e tipografia
 de elementos conforme a aula anterior
 -->

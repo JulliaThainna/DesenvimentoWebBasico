@@ -1,6 +1,8 @@
 body{
     background-color: black;
     font-family:'Bungee', cursive;
+    font-size: larger;
+    color: white;
 }
 
 .swCards{
@@ -13,10 +15,14 @@ body{
 }
 
 .divFormSides{
-    color: rgb(190, 180, 180);
     font-size: small;
 }
 
+.formSide .list-group-item{
+    color: rgb(190, 180, 180);
+    background-color: transparent;
+    border: none;
+}
 .formSide .form-check-input:checked[type=radio]{
     background-image: none;
 }
@@ -37,20 +43,58 @@ input#sideJedi.form-check-input:checked, input#sideJedi.form-check-input:focus{
     box-shadow: 0 0 0 0.25rem rgba(0, 0, 255, .25);
 }
 
-#button-choose{
+.button-choose{
     background-color: transparent;
     border: 0.05rem solid rgb(255, 193, 7);
     color: white;
 }
-button#button-choose:hover {  
+button.button-choose:hover, button.button-choose:active{  
+    color: white;
+    border: 0.05rem solid rgb(255, 193, 7); 
     box-shadow: 0 0 10px rgba(255, 193, 7, 0.05), 0 0 20px rgba(255, 193, 7, 0.05), 0 0 30px rgba(255, 193, 7, 0.05), 0 0 40px rgba(255, 193, 7, 0.05), 0 0 70px rgba(255, 193, 7, 0.05), 0 0 80px rgba(255, 193, 7, 0.05), 0 0 100px rgba(255, 193, 7, 0.05), 0 0 150px rgba(255, 193, 7, 0.05), 0 0 200px rgba(255, 193, 7, 0.05);
 }
 
-#div-arrow{
+.div-arrow{
     visibility: hidden;
 }
-
-.swCards .card-img {
-    width: 35rem;
-    height: 27rem;
+.div-arrow a i{
+    color: rgb(190, 180, 180); 
+    font-size: 1.8rem;
 }
+.div-arrow a:hover i{
+    color: white !important;
+}
+
+#div-input-name .form-control:focus{
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.05), 0 0 20px rgba(255, 193, 7, 0.05), 0 0 30px rgba(255, 193, 7, 0.05), 0 0 40px rgba(255, 193, 7, 0.05), 0 0 70px rgba(255, 193, 7, 0.05), 0 0 80px rgba(255, 193, 7, 0.05), 0 0 100px rgba(255, 193, 7, 0.05), 0 0 150px rgba(255, 193, 7, 0.05), 0 0 200px rgba(255, 193, 7, 0.05);
+}
+
+#input-name::placeholder{
+    color: rgb(190, 180, 180);
+}
+
+#select-movie{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    border: 0.05rem white solid;
+}
+#select-movie:hover{
+    cursor: pointer;
+}
+#select-movie option{
+    background-color: black;
+}
+#select-movie:focus{
+    border: 0.05rem solid rgb(255, 193, 7); 
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.05), 0 0 20px rgba(255, 193, 7, 0.05), 0 0 30px rgba(255, 193, 7, 0.05), 0 0 40px rgba(255, 193, 7, 0.05), 0 0 70px rgba(255, 193, 7, 0.05), 0 0 80px rgba(255, 193, 7, 0.05), 0 0 100px rgba(255, 193, 7, 0.05), 0 0 150px rgba(255, 193, 7, 0.05), 0 0 200px rgba(255, 193, 7, 0.05);
+}
+
+#checkbox-mission .form-check-input:checked {
+    background-color: rgb(255, 193, 7);
+    border-color: rgb(255, 193, 7);
+    box-shadow: none;
+}
+#checkbox-mission{
+    border: 0.05rem solid white;
+}
+
+/* TODO: Tirar os px */

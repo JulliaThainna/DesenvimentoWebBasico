@@ -18,10 +18,10 @@
         <div class="container-fluid align-items-center shadow rounded-4 mx-5">
             <h2 class="pt-5 text-center">Calculadora de média</h2>
             <p style="font-size: larger;" class="text-center">Insira suas notas</p>
-            <form id="myForm" class="row justify-content-center mt-5" onsubmit="return showMedia()">
-                <div class="container row  justify-content-center align-items-center mb-3">
-                    <label for="name" style="width: 50rem;">Nome</label>
-                    <input type="text" class="form-control" style="width: 50rem;" placeholder="José Bezerra da Silva" id="name" required/>
+            <form id="myForm" class="row justify-content-center mt-5" onsubmit="return showMedia()"> 
+                <div class="row container row-name mb-3">
+                    <label for="name" class="px-0">Nome</label>  
+                    <input type="text" class="form-control" placeholder="José Bezerra da Silva" id="name" required/>
                 </div>
                 <div class="col-md-auto">
                     <label for="name">Nota 1</label>
@@ -52,7 +52,7 @@
                 <br>
                 Média: <span id="media"></span>
                 <br>
-                <span id="situacao"></span>
+                <span style="color: white;" id="situacao"></span>
             </h6>
         </div>
   </div>

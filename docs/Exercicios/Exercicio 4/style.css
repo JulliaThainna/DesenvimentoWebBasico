@@ -3,5 +3,12 @@
 }
   
 #media-text {
-visibility: hidden;
+    visibility: hidden;
+}
+
+@media(min-width: 768px){
+    .row-name{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
 }

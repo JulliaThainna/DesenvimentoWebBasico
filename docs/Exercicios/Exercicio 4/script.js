@@ -11,13 +11,13 @@ function showMedia( ) {
     document.getElementById("media").innerHTML = media;
     let situacao;
     if(media >= 6){
-        situacao = "aprovado";
+        situacao = "Aprovado(a)";
     }
     else if(media < 6 && media <= 2){
-        situacao = "reprovado";
+        situacao = "Reprovado(a)";
     }
     else if(media >= 2.1 && media <= 5.9){
-        situacao = "recuperacao"
+        situacao = "Recuperacao(a)"
     }
 
     document.getElementById("situacao").innerHTML = situacao;

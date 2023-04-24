@@ -149,7 +149,6 @@
 
   function showHistory(name, numberMovie, missions){
     selectedSide = localStorage.getItem("side");
-    let hist = document.getElementById("h3-history");
     let planet, year;
     if(selectedSide == null){
       return;
@@ -191,6 +190,8 @@
         break;
     }
 
+    let hist = document.getElementById("h4-history");
+    document.getElementById("h3-history").innerHTML = "A long time ago in a galaxy far, far away....";
     if(selectedSide == "neutral"){
       hist.innerHTML = `You, ${name.value.toUpperCase()}, is an adventurer in the planet ${planet} in the year ${year}, you literally don't care about dark and light, imperial or rebels, you just want to enjoy the life. In this moment do you have this adventures to explore: ${missions}. Good luck!`;
     }

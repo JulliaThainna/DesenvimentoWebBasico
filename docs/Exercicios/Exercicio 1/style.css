@@ -94,4 +94,5 @@ button.button-choose:hover, button.button-choose:active{
 }
 #checkbox-mission{
     border: 0.05rem solid white;
+    font-size: small;
 }

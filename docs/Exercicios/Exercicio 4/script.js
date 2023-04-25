@@ -17,15 +17,16 @@ function showMedia( ) {
         situacao = "Reprovado(a)";
     }
     else if(media >= 2.1 && media <= 5.9){
-        situacao = "Recuperacao(a)"
+        situacao = "Recuperacao"
     }
 
     document.getElementById("situacao").innerHTML = situacao;
+    console.log(situacao)
     let id_situacao = document.getElementById("situacao");
-    if(situacao == "aprovado"){
+    if(situacao == "Aprovado(a)"){
         id_situacao.style.backgroundColor = "green";
     }
-    else if(situacao == "reprovado"){
+    else if(situacao == "Reprovado(a)"){
         id_situacao.style.backgroundColor = "red";
     }
     else{

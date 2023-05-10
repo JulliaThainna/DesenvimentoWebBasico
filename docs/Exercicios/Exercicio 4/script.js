@@ -7,7 +7,7 @@ function showMedia( ) {
     let n4 = document.getElementById("n4");
     let media = (parseInt(n1.value) + parseInt(n2.value) + parseInt(n3.value) + parseInt(n4.value)) / 4;
 
-    document.getElementById("media-text").setAttribute("style", "visibility: visible; padding");
+    document.getElementById("media-text").style.visibility = "visible";
     document.getElementById("media").innerHTML = media;
     let situacao;
     if(media >= 6){

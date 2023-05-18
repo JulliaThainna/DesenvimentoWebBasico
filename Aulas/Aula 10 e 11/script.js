@@ -11,3 +11,6 @@ function salvar(){
     cel2.innerHTML = document.getElementById('nascimento').value;
     cel3.innerHTML = document.getElementById('estado').value;
 }
+
+//Fazer a limpeza do formulario ao salvar
+//Desmembrar a tabela do formulário -> tela de cadastro -> Ir pra tabela em outra pagina
